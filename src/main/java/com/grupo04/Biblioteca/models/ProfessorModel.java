@@ -25,7 +25,7 @@ public class ProfessorModel {
     private Long cdProfessor;
 
     @Column(name = "nm_professor")
-    private char nmProfessor;
+    private String nmProfessor;
 
     @Column(name = "dt_cadastro", insertable = false, updatable = false)
     private LocalDateTime dtCadastro;
