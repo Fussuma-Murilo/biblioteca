@@ -81,7 +81,7 @@ public class BibliotecarioController {
     }
 
     @PatchMapping("/{id}/{atributo}/{novo}")
-    public ResponseEntity patch(@PathVariable Long id, @PathVariable String atributo, @PathVariable String novo) {
+    public ResponseEntity patch(@PathVariable String id, @PathVariable String atributo, @PathVariable String novo) {
 
         BibliotecarioModel bibliotecario;
         try {
@@ -119,7 +119,7 @@ public class BibliotecarioController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete(@PathVariable Long id) {
+    public ResponseEntity<?> delete(@PathVariable String id) {
         try {
             repository.deleteById(id);
             return ResponseEntity.ok().build();

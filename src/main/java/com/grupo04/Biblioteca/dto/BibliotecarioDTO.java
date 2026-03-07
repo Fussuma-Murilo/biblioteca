@@ -4,4 +4,4 @@ import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 
-public record BibliotecarioDTO(Long id, String nome, LocalDateTime nascimento, char sexo) { }
+public record BibliotecarioDTO(String id, String nome, LocalDateTime nascimento, char sexo) { }

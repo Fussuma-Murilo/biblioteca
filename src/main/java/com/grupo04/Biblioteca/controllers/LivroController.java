@@ -88,7 +88,6 @@ public class LivroController {
             livroAtual.setCd_aluno(livroAtualizado.getCd_aluno());
             livroAtual.setCd_professor(livroAtualizado.getCd_professor());
             livroAtual.setSn_locado(livroAtualizado.getSn_locado());
-            livroAtual.setSn_ativo(livroAtualizado.getSn_ativo());
 
             repository.save(livroAtual);
             return ResponseEntity.ok().build();

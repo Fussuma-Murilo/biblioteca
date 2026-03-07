@@ -21,7 +21,7 @@ public class BibliotecarioModel {
             allocationSize = 1
     )
     @Column(name = "cd_bibliotecario")
-    private Long cdBibliotecario;
+    private String cdBibliotecario;
 
     @Column(name = "nm_bibliotecario")
     private String nmBibliotecario;

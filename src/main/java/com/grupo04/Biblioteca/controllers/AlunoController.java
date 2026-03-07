@@ -58,8 +58,6 @@ public class AlunoController {
             alunoAtual.setDt_nascimento(aluno.getDt_nascimento());
             alunoAtual.setTp_sexo(aluno.getTp_sexo());
             alunoAtual.setDs_email(aluno.getDs_email());
-            alunoAtual.setDt_cadastro(aluno.getDt_cadastro());
-            alunoAtual.setSn_ativo(aluno.getSn_ativo());
 
             repository.save(alunoAtual);
             return ResponseEntity.ok().build();
@@ -96,14 +94,6 @@ public class AlunoController {
 
                 case "email":
                     aluno.setDs_email(novo);
-                    break;
-
-                case "cadastro":
-                    aluno.setDt_cadastro(java.time.LocalDateTime.parse(novo));
-                    break;
-
-                case "ativo":
-                    aluno.setSn_ativo(novo.charAt(0));
                     break;
 
                 default:
