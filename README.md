@@ -10,7 +10,6 @@ com o objetivo de organizar o gerenciamento de livros de uma biblioteca.
  - Alexksandro Fernandes de Queiroz
  - Fernanda Tozzi Honorio
  - Gustavo Farias Ferreira
- - Kalebe Furlan de Oliveira
  - Murilo Choiti Fussuma
  - Samuel Souza
 ````
