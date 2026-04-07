@@ -32,7 +32,7 @@ public class BibliotecarioModel {
     private String cdSenha;
 
     @Column(name = "dt_nascimento")
-    private LocalDateTime dtNascimento;
+    private LocalDateTime    dtNascimento;
 
     @Column(name = "tp_sexo")
     private char tpSexo;

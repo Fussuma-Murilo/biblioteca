@@ -25,7 +25,7 @@ public class TokenService {
                 .setSubject(usuario) // usuário dono do token
                 .claim("scope", "USER")
                 .setIssuedAt(new Date()) // data de criação
-                .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // expira em 24h
+                .setExpiration(new Date(System.currentTimeMillis() + 60000)) // expira em 24h
                 .signWith(key)
                 .compact();
     }
